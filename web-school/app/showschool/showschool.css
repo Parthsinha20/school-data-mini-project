@@ -1,0 +1,334 @@
+/* showSchools.css
+   Responsive grid + product-style school cards
+*/
+
+/* Page container */
+
+*{
+    background-color: white;
+}
+.schools-container {
+  padding: 24px;
+  max-width: 100%;
+  /* margin: 0 auto; */
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  color: #1f2937;
+  /* background: #f8fafc; */
+}
+
+/* Title */
+.schools-title {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 700;
+  margin: 8px 0 28px;
+  color: #0f172a;
+}
+
+/* Empty / fallback message */
+.no-schools {
+  text-align: center;
+  font-size: 16px;
+  color: #6b7280;
+  padding: 40px 0;
+}
+
+/* Grid layout */
+.schools-grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr;
+}
+
+/* Responsive breakpoints */
+@media (min-width: 600px) {
+  .schools-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (min-width: 900px) {
+  .schools-grid { grid-template-columns: repeat(3, 1fr); }
+}
+@media (min-width: 1200px) {
+  .schools-grid { grid-template-columns: repeat(4, 1fr); }
+}
+
+/* Card */
+.school-card {
+  background: #ffffff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(15,23,42,0.06);
+  transition: transform .18s ease, box-shadow .18s ease;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+
+.school-card:hover,
+.school-card:focus-within {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(15,23,42,0.12);
+}
+
+
+.school-image {
+  width: 100%;
+  height: 180px;
+  display:block;
+  object-fit: cover;
+  background: linear-gradient(180deg,#f3f4f6, #e6eef6);
+}
+
+
+@media (max-width: 420px) {
+  .school-image { height: 140px; }
+}
+
+
+.school-body {
+  padding: 14px 16px 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  flex: 1;
+}
+
+
+.school-name {
+  font-size: 16px;
+  font-weight: 700;
+  color: #0b1220;
+  margin: 0;
+  line-height: 1.2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; 
+}
+
+
+.school-address {
+  font-size: 13px;
+  color: #374151;
+  margin: 0;
+  line-height: 1.3;
+  max-height: 2.6em; 
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.school-city {
+  font-size: 13px;
+  color: #6b7280;
+  margin-top: 4px;
+}
+
+
+.school-meta {
+  margin-top: auto;
+  display: flex;
+  justify-content: flex-start;
+  gap: 8px;
+  align-items: center;
+  font-size: 13px;
+  color: #6b7280;
+}
+
+
+.school-card:focus-within,
+.school-card a:focus {
+  outline: 3px solid rgba(99,102,241,0.12);
+  outline-offset: 4px;
+  border-radius: 12px;
+}
+
+
+.img-fallback {
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:#9ca3af;
+  font-size:14px;
+  height:100%;
+  wid
+
+
+
+.schools-container {
+  padding: 24px;
+  max-width: 1300px;
+  margin: 0 auto;
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  color: #1f2937;
+  background: #f8fafc;
+}
+
+
+.schools-title {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 700;
+  margin: 8px 0 28px;
+  color: #0f172a;
+}
+
+
+.no-schools {
+  text-align: center;
+  font-size: 16px;
+  color: #6b7280;
+  padding: 40px 0;
+}
+
+
+.schools-grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr;
+}
+
+
+@media (min-width: 600px) {
+  .schools-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (min-width: 900px) {
+  .schools-grid { grid-template-columns: repeat(3, 1fr); }
+}
+@media (min-width: 1200px) {
+  .schools-grid { grid-template-columns: repeat(4, 1fr); }
+}
+
+
+.school-card {
+  background: #ffffff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(15,23,42,0.06);
+  transition: transform .18s ease, box-shadow .18s ease;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+
+.school-card:hover,
+.school-card:focus-within {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(15,23,42,0.12);
+}
+
+
+.school-image {
+  width: 100%;
+  height: 180px;
+  display:block;
+  object-fit: cover;
+  background: linear-gradient(180deg,#f3f4f6, #e6eef6);
+}
+
+
+@media (max-width: 420px) {
+  .school-image { height: 140px; }
+}
+
+
+.school-body {
+  padding: 14px 16px 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  flex: 1;
+}
+
+
+.school-name {
+  font-size: 16px;
+  font-weight: 700;
+  color: #0b1220;
+  margin: 0;
+  line-height: 1.2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; 
+}
+
+
+.school-address {
+  font-size: 13px;
+  color: #374151;
+  margin: 0;
+  line-height: 1.3;
+  max-height: 2.6em; 
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.school-city {
+  font-size: 13px;
+  color: #6b7280;
+  margin-top: 4px;
+}
+
+
+.school-meta {
+  margin-top: auto;
+  display: flex;
+  justify-content: flex-start;
+  gap: 8px;
+  align-items: center;
+  font-size: 13px;
+  color: #6b7280;
+}
+
+
+.school-card:focus-within,
+.school-card a:focus {
+  outline: 3px solid rgba(99,102,241,0.12);
+  outline-offset: 4px;
+  border-radius: 12px;
+}
+
+.img-fallback {
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:#9ca3af;
+  font-size:14px;
+  height:100%;
+  width:100%;
+}
+
+
+@media (min-width: 900px) {
+  .school-address { white-space: normal; }
+}
+}
+.delete-btn {
+  margin-top: 10px;
+  padding: 8px 14px;
+  background-color: #ef4444; /* red-500 */
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  display: inline-block;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+/* Hover effect */
+.delete-btn:hover {
+  background-color: #dc2626; /* red-600 */
+  transform: scale(1.05);
+}
+
+/* Click (active) effect */
+.delete-btn:active {
+  background-color: #b91c1c; /* red-700 */
+  transform: scale(0.98);
+}
+
+/* Add spacing from text above */
+.school-body .delete-btn {
+  margin-top: 12px;
+}
