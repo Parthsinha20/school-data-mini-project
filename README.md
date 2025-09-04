@@ -1,4 +1,4 @@
-# school-data-mini-project
+
 # School Management Web App
 
 A simple full-stack web application built with Next.js and MySQL to manage schools.  
